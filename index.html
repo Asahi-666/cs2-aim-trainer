@@ -180,3 +180,98 @@
         }
     </style>
 </head>
+<body>
+    <div id="app">
+        <!-- 主菜单视图 - 类似trainGun-main布局 -->
+        <div class="menu-container">
+            <!-- Logo区域 -->
+            <div class="logo-container">
+                <h1 class="logo">BALL AIM TRAINER</h1>
+                <p class="subtitle">2D射击训练器 - 提升你的瞄准精度</p>
+                <div class="logo-line"></div>
+            </div>
+
+            <!-- 模式网格 - 6个训练模式卡片 -->
+            <div class="mode-grid" id="mode-grid">
+                <!-- 模式1: 基础训练 -->
+                <div class="mode-card" data-mode="basic">
+                    <div class="card-content">
+                        <span class="mode-icon">🎯</span>
+                        <h3 class="mode-title">基础训练</h3>
+                        <p class="mode-desc">固定目标点击训练，适合新手入门</p>
+                        <span class="mode-tag">BASIC</span>
+                    </div>
+                </div>
+
+                <!-- 模式2: 移动训练 -->
+                <div class="mode-card" data-mode="moving">
+                    <div class="card-content">
+                        <span class="mode-icon">🏃</span>
+                        <h3 class="mode-title">移动训练</h3>
+                        <p class="mode-desc">移动目标追踪训练，提升动态瞄准</p>
+                        <span class="mode-tag">MOVING</span>
+                    </div>
+                </div>
+
+                <!-- 模式3: 连击训练 -->
+                <div class="mode-card" data-mode="combo">
+                    <div class="card-content">
+                        <span class="mode-icon">💥</span>
+                        <h3 class="mode-title">连击训练</h3>
+                        <p class="mode-desc">连续命中目标，保持连击不断</p>
+                        <span class="mode-tag">COMBO</span>
+                    </div>
+                </div>
+
+                <!-- 模式4: 速度训练 -->
+                <div class="mode-card" data-mode="speed">
+                    <div class="card-content">
+                        <span class="mode-icon">⚡</span>
+                        <h3 class="mode-title">速度训练</h3>
+                        <p class="mode-desc">快速反应训练，提升点击速度</p>
+                        <span class="mode-tag">SPEED</span>
+                    </div>
+                </div>
+
+                <!-- 模式5: 精度训练 -->
+                <div class="mode-card" data-mode="precision">
+                    <div class="card-content">
+                        <span class="mode-icon">🎯</span>
+                        <h3 class="mode-title">精度训练</h3>
+                        <p class="mode-desc">小目标精准点击，提升射击精度</p>
+                        <span class="mode-tag">PRECISION</span>
+                    </div>
+                </div>
+
+                <!-- 模式6: 耐力训练 -->
+                <div class="mode-card" data-mode="endurance">
+                    <div class="card-content">
+                        <span class="mode-icon">⏱️</span>
+                        <h3 class="mode-title">耐力训练</h3>
+                        <p class="mode-desc">长时间持续训练，提升耐力稳定性</p>
+                        <span class="mode-tag">ENDURANCE</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部按钮 -->
+            <div class="footer-btns">
+                <button class="btn" id="btn-settings">
+                    <span class="btn-icon">⚙️</span>
+                    <span>游戏设置</span>
+                </button>
+                <button class="btn" id="btn-stats">
+                    <span class="btn-icon">📊</span>
+                    <span>训练统计</span>
+                </button>
+                <button class="btn" id="btn-help">
+                    <span class="btn-icon">❓</span>
+                    <span>使用帮助</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
